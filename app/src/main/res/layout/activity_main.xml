@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15sp"
+    android:background="@drawable/dsd"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imageview"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15sp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/mainlogo" />
+
+    <TextView
+          android:layout_width="match_parent"
+          android:id="@+id/text"
+          android:textColor="@color/black"
+        android:layout_marginLeft="3dp"
+        android:padding="3dp"
+
+          android:layout_height="wrap_content"
+         android:text="Please Create a room code/ Name and Share the code with your friends to start Video Call or enter the code of the room you want to join."
+         android:layout_below="@id/imageview"
+         android:textStyle="bold"/>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="15sp"
+       android:id="@+id/roomcode"
+       android:hint="Enter Room Code"
+       android:textColorHint="@color/white"
+       android:padding="13dp"
+       android:textColor="@color/white"
+       android:layout_below="@id/text"
+       android:gravity="center"
+       android:background="@drawable/background"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/joincreate"
+        android:layout_below="@id/roomcode"
+        android:text="Join/Create"
+        android:layout_marginTop="15sp"
+        android:padding="13dp"
+        android:background="@drawable/backgrondcorner2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/share"
+        android:layout_below="@id/joincreate"
+        android:text="Share"
+        android:layout_marginTop="15sp"
+        android:padding="13dp"
+        android:background="@drawable/backgroundcorner3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/text2"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="all rights reserved by Satyam Jha"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_above="@id/text2"
+        android:layout_below="@id/share">
+        <TextView
+            android:layout_marginTop="65dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satyam_kr_jha"
+            android:id="@+id/insta"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/instagram"
+            android:textColor="@color/black"/>
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/log"
+        android:id="@+id/logoutbtn"
+        android:layout_alignParentRight="true"
+        />
+
+
+
+</RelativeLayout>
